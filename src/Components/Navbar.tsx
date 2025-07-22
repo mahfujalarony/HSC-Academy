@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-5 bg-gradient-to-r from-white to-gray-100">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center">
@@ -32,13 +32,17 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center">
+          <nav className="hidden xl:flex items-center">
             <ul className="flex space-x-6">
-              {navigationItems.map((item) => (
-                <li key={item.href} className="hover:text-blue-600 transition-colors">
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
+                {navigationItems.map((item) => (
+    <li 
+      key={item.href} 
+      className={`hover:text-blue-600 font-bold transition-colors px-2 py-1 rounded 
+        ${item.href === "/success" ? "bg-blue-200 border rounded-2xl text-black font-semibold" : ""}`}
+    >
+      <Link href={item.href}>{item.label}</Link>
+    </li>
+  ))}
             </ul>
             
             {/* Auth Button */}
@@ -48,7 +52,7 @@ const Navbar = () => {
                 className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
               >
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2E8F0_0%,#393BB2_50%,#E2E8F0_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-3 text-sm font-medium text-white backdrop-blur-3xl hover:bg-slate-800 transition-colors">
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center border rounded-full bg-blue-200  px-6 py-3 text-sm font-medium  backdrop-blur-3xl hover:bg-slate-800">
                   লগইন / রেজিস্টার
                 </span>
               </Link>

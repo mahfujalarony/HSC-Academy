@@ -24,7 +24,7 @@ const MobileMenu = ({ navigationItems }: MobileMenuProps) => {
       {/* Mobile Menu Button */}
       <button 
         onClick={toggleMobileMenu}
-        className="md:hidden p-2 text-gray-600 hover:text-blue-600 transition-colors"
+        className="xl:hidden p-2 text-gray-600 hover:text-blue-600 transition-colors"
         aria-label="Toggle mobile menu"
       >
         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -32,7 +32,7 @@ const MobileMenu = ({ navigationItems }: MobileMenuProps) => {
 
       {/* Mobile Sidebar */}
       <div className={`
-        md:hidden fixed inset-0 z-50 transition-all duration-300 ease-in-out
+        xl:hidden fixed inset-0 z-50 transition-all duration-300 ease-in-out
         ${isMobileMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}
       `}>
         {/* Backdrop */}
