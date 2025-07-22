@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+/* // hero section styles */
 /* মোবাইল ডিভাইসের জন্য (যেমন 768px এর নিচে) */
 @media (max-width: 568px) {
   .hero-section {
@@ -13,4 +13,21 @@
   .hero-section {
     background-image: url('/canva1.png');
   }
+}
+
+
+/* // CourseIntro Component Styles */
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.tab-button.active {
+  background: #2563eb; /* blue-600 */
+  color: white;
+  border-color: #2563eb;
 }
