@@ -107,10 +107,10 @@ const CourseIntro = () => {
 
         <div className="w-full md:w-1/2 space-y-4 md:space-y-6 text-center md:text-left">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-700">
-            HSC Academy'র সাথেই শিখছে সবাই, জিতছে সবাই
+            HSC Academy&apos;র সাথেই শিখছে সবাই, জিতছে সবাই
           </h2>
           <p className="text-[#994242] text-lg md:text-xl">
-            এখন তুমি যেখানেই থাকো, ম্যাটার করে না কিছুই! কারণ সবাই শিখছে আর জিতছে দেশের সবচেয়ে নির্ভরযোগ্য ডিজিটাল লার্নিং প্রতিষ্ঠান শিখো'র সাথে। কিন্তু কীভাবে? জানতে পাশে ভিডিওটি দেখে চঞ্চল চৌধুরীর কাছ থেকেই জেনে নাও!
+            এখন তুমি যেখানেই থাকো, ম্যাটার করে না কিছুই! কারণ সবাই শিখছে আর জিতছে দেশের সবচেয়ে নির্ভরযোগ্য ডিজিটাল লার্নিং প্রতিষ্ঠান শিখো&apos;র সাথে। কিন্তু কীভাবে? জানতে পাশে ভিডিওটি দেখে চঞ্চল চৌধুরীর কাছ থেকেই জেনে নাও!
           </p>
           <button className="mt-4 px-6 py-3 md:px-8 md:py-4 text-lg md:text-xl bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 transition-all text-white rounded-lg font-semibold shadow-md hover:shadow-lg">
             আমাদের সম্পর্কে জেনে নাও
