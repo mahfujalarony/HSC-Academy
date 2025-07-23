@@ -5,6 +5,7 @@ import HscFeatureTabs from '@/Components/HscFeatureTabs'
 import CourseIntro from '@/Components/CourseIntro'
 import PromotionalSection from '@/Components/PromotionalSection'
 import Testimonial from '@/Components/Testimonial'
+import HelpSection from '@/Components/HelpSection'
 
 const Page = () => {
   return (
@@ -15,6 +16,7 @@ const Page = () => {
       <CourseIntro />
       <PromotionalSection />
       <Testimonial />
+      <HelpSection />
     </div>
   )
 }

@@ -100,7 +100,7 @@ const Testimonial: React.FC = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto p-6 md:p-8 bg-white rounded-lg shadow-lg mt-10 overflow-hidden">
+    <div className="relative  w-full max-w-4xl mx-auto p-6 md:p-8 bg-gray-100 rounded-lg shadow-lg mt-10 overflow-hidden">
       <div className="relative h-[500px] md:h-[400px]">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -114,11 +114,11 @@ const Testimonial: React.FC = () => {
             className="absolute w-full h-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12"
           >
             {/* Quote Section */}
-            <div className="md:w-1/2 flex flex-col items-start space-y-4 px-4">
+            <div className="md:w-1/2  flex flex-col items-start space-y-4 px-4">
               <div className="text-4xl text-blue-600">
                 <span className="font-serif">&ldquo;</span>
               </div>
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              <p className="text-lg md:text-xl text-blue-700 leading-relaxed">
                 {currentTestimonial.quote}
               </p>
               <div className="mt-4">
