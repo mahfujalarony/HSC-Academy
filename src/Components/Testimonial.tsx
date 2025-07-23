@@ -116,7 +116,7 @@ const Testimonial: React.FC = () => {
             {/* Quote Section */}
             <div className="md:w-1/2 flex flex-col items-start space-y-4 px-4">
               <div className="text-4xl text-blue-600">
-                <span className="font-serif">"</span>
+                <span className="font-serif">&ldquo;</span>
               </div>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                 {currentTestimonial.quote}
