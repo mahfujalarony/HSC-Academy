@@ -16,8 +16,16 @@ const categories: { [key: string]: string } = {
   'class-6': 'ক্লাস ৬',
 };
 
+interface PageProps {
+  params: {
+    category: string;
+  };
+  searchParams?: {
+    [key: string]: string | string[] | undefined;
+  };
+}
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
+export default function CategoryPage({ params }: PageProps) {
   const router = useRouter();
   const { category } = params;
   const [isLoading, setIsLoading] = useState(true);
@@ -26,13 +34,16 @@ export default function CategoryPage({ params }: { params: { category: string } 
 
   useEffect(() => {
     document.title = `${title} - কোর্সসমূহ`;
+    
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
+    
     return () => clearTimeout(timer);
   }, [category, title]);
 
+  // Rest of your component remains the same...
   const filteredCourses =
     category === 'all'
       ? courseList
