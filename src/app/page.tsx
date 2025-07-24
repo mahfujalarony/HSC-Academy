@@ -1,13 +1,13 @@
 import React from 'react'
-import Hero from '@/Components/Hero'
-import InfoCard from '@/Components/InfoCard'
-import HscFeatureTabs from '@/Components/HscFeatureTabs'
-import CourseIntro from '@/Components/CourseIntro'
-import PromotionalSection from '@/Components/PromotionalSection'
-import Testimonial from '@/Components/Testimonial'
-import HelpSection from '@/Components/HelpSection'
-import Investor from '@/Components/Investor'
-import Footer from '@/Components/Footer'
+import Hero from '@/Components/Page/Hero'
+import InfoCard from '@/Components/Page/InfoCard'
+import HscFeatureTabs from '@/Components/Page/HscFeatureTabs'
+import CourseIntro from '@/Components/Page/CourseIntro'
+import PromotionalSection from '@/Components/Page/PromotionalSection'
+import Testimonial from '@/Components/Page/Testimonial'
+import HelpSection from '@/Components/Page/HelpSection'
+import Investor from '@/Components/Page/Investor'
+import Footer from '@/Components/Page/Footer'
 
 const Page = () => {
   return (

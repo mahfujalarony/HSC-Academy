@@ -6,7 +6,7 @@ import MobileMenu from './MobileMenu';
 const Navbar = () => {
   const navigationItems = [
     { href: "/", label: "হোম" },
-    { href: "/courses", label: "সকল কোর্স" },
+    { href: "/courses/all", label: "সকল কোর্স" },
     { href: "/success", label: "লক্ষ GPA-5" },
     { href: "/admission", label: "এডমিশন প্রোগ্রাম" },
     { href: "/shop", label: "শিখ শপ" },
