@@ -6,6 +6,8 @@ import CourseIntro from '@/Components/CourseIntro'
 import PromotionalSection from '@/Components/PromotionalSection'
 import Testimonial from '@/Components/Testimonial'
 import HelpSection from '@/Components/HelpSection'
+import Investor from '@/Components/Investor'
+import Footer from '@/Components/Footer'
 
 const Page = () => {
   return (
@@ -17,6 +19,8 @@ const Page = () => {
       <PromotionalSection />
       <Testimonial />
       <HelpSection />
+      <Investor />
+      <Footer />
     </div>
   )
 }

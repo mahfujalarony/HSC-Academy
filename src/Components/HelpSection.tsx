@@ -36,7 +36,7 @@ const HelpSection = () => {
   }
 
   return (
-    <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+    <div className={`transition-all bg-gray-100 duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Mobile Layout */}
       <div className="flex flex-col lg:hidden min-h-screen">
         {/* Main Help Section */}
@@ -51,14 +51,14 @@ const HelpSection = () => {
         >
           <div className="absolute inset-0 bg-opacity-40"></div>
           <div className="relative z-10 flex items-center justify-center h-full px-4 py-12">
-            <div className="text-white text-center max-w-md">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-4 leading-tight animate-fade-in-up">
+            <div className=" max-w-md">
+              <h2 className="text-2xl text-indigo-700 sm:text-3xl font-bold mb-4 leading-tight animate-fade-in-up">
                 যেকোনো প্রয়োজনে কল করো এখনই
-              </h2>
-              <p className="text-base sm:text-lg mb-4 opacity-90 animate-fade-in-up animation-delay-200">
+              </h2> 
+              <p className="text-base sm:text-lg mb-4 opacity-90 text-pink-900 animate-fade-in-up animation-delay-200">
                 আমাদের টিম সবসময় তোমার পাশে আছে। যেকোনো প্রশ্ন বা সমস্যার জন্য যোগাযোগ করো।
               </p>
-              <p className="text-base sm:text-lg mb-6 opacity-90 animate-fade-in-up animation-delay-400">
+              <p className="text-base sm:text-lg mb-6 opacity-90 text-cyan-900 animate-fade-in-up animation-delay-400">
                 সকাল ৯ টা থেকে রাত ১০ টা
               </p>
               <button 
@@ -67,7 +67,7 @@ const HelpSection = () => {
               >
                 📞 166615
               </button>
-              <p className="text-sm mt-4 opacity-80 animate-fade-in-up animation-delay-800">
+              <p className="text-sm mt-4 opacity-80 animate-fade-in-up text-fuchsia-900 animation-delay-800">
                 যেকোনো নাম্বর থেকে সাধারন কল রেট
               </p>
             </div>
@@ -78,8 +78,8 @@ const HelpSection = () => {
         <div
           className={`
             relative overflow-hidden cursor-pointer transform transition-all duration-300
-            ${touchCard === 'video' ? 'scale-105' : ''}
-            ${activeCard === 'video' ? 'scale-105' : ''}
+            // ${touchCard === 'video' ? 'scale-95' : ''}
+            // ${activeCard === 'video' ? 'scale-95' : ''}
           `}
           style={{
             backgroundImage: 'url(/pic3/p2.png)', 
@@ -99,9 +99,9 @@ const HelpSection = () => {
         >
           <div className="absolute inset-0 transition-all duration-300"></div>
           {/* Hover Overlay */}
-          <div className={`absolute inset-0 bg-blue-600 bg-opacity-20 transition-all duration-300 
+          {/* <div className={`absolute inset-0 bg-blue-600 bg-opacity-20 transition-all duration-300 
             ${(activeCard === 'video' || touchCard === 'video') ? 'opacity-100' : 'opacity-0'}`}></div>
-          
+           */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center">
             <h3 className="font-bold text-lg sm:text-xl text-white mb-4 drop-shadow-lg">
               📚 ফ্রী ভিডিও লাইব্রেরি
@@ -136,7 +136,7 @@ const HelpSection = () => {
           onClick={() => handleGroupClick()}
         >
           <div className="absolute inset-0  bg-opacity-30 transition-all duration-300"></div>
-          <div className={`absolute inset-0 bg-blue-600 bg-opacity-20 transition-all duration-300 ${(activeCard === 'group' || touchCard === 'group') ? 'opacity-100' : 'opacity-0'}`}></div>
+          {/* <div className={`absolute inset-0 bg-blue-600 bg-opacity-20 transition-all duration-300 ${(activeCard === 'group' || touchCard === 'group') ? 'opacity-100' : 'opacity-0'}`}></div> */}
           
           <div className="relative z-10 flex flex-col items-center justify-center h-full p-6 text-center">
             <h3 className="font-bold text-lg sm:text-xl text-white mb-4 drop-shadow-lg leading-tight">
