@@ -19,22 +19,31 @@ const categories: { [key: string]: string } = {
 export default function CategoryPage({
   params,
 }: {
-  params: { category: string };
+  params: Promise<{ category: string }>;
 }) {
   const router = useRouter();
-  const { category } = params;
+  const [category, setCategory] = useState<string>('');
   const [isLoading, setIsLoading] = useState(true);
+
+  // Extract category from params Promise
+  useEffect(() => {
+    params.then((resolvedParams) => {
+      setCategory(resolvedParams.category);
+    });
+  }, [params]);
 
   const title = categories[category] || 'কোর্স';
 
   useEffect(() => {
-    document.title = `${title} - কোর্সসমূহ`;
-    
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
-    
-    return () => clearTimeout(timer);
+    if (category) {
+      document.title = `${title} - কোর্সসমূহ`;
+      
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+      
+      return () => clearTimeout(timer);
+    }
   }, [category, title]);
 
   const filteredCourses =
