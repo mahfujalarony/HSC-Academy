@@ -16,6 +16,7 @@ const categories: { [key: string]: string } = {
   'class-6': 'ক্লাস ৬',
 };
 
+
 export default function CategoryPage({ params }: { params: { category: string } }) {
   const router = useRouter();
   const { category } = params;
@@ -25,14 +26,12 @@ export default function CategoryPage({ params }: { params: { category: string } 
 
   useEffect(() => {
     document.title = `${title} - কোর্সসমূহ`;
-    
     // Simulate loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-    
     return () => clearTimeout(timer);
-  }, [category]);
+  }, [category, title]);
 
   const filteredCourses =
     category === 'all'
