@@ -14,8 +14,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-5 bg-gradient-to-r from-white to-gray-100">
+    <header className="bg-white shadow-md ">
+      <div className=" container mx-auto px-4 py-5 bg-gradient-to-r from-white to-gray-100">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <div className="flex items-center">
